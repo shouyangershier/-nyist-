@@ -1,0 +1,163 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'D:\桌面\python\PyQt5\QSS\登记系统的制作\resource\UI\recognition_sys.ui'
+#
+# Created by: PyQt5 UI code generator 5.14.1
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(1200, 700)
+        Form.setMinimumSize(QtCore.QSize(1200, 700))
+        Form.setMaximumSize(QtCore.QSize(1200, 700))
+        self.listView = QtWidgets.QListView(Form)
+        self.listView.setGeometry(QtCore.QRect(0, 0, 1200, 700))
+        self.listView.setMinimumSize(QtCore.QSize(1200, 700))
+        self.listView.setMaximumSize(QtCore.QSize(1200, 700))
+        self.listView.setStyleSheet("background-image: url(:/recognition/images/recongnition_bg.jpg);")
+        self.listView.setObjectName("listView")
+        self.label_show_camera = QtWidgets.QLabel(Form)
+        self.label_show_camera.setGeometry(QtCore.QRect(65, 80, 400, 500))
+        self.label_show_camera.setMinimumSize(QtCore.QSize(400, 500))
+        self.label_show_camera.setMaximumSize(QtCore.QSize(405, 505))
+        self.label_show_camera.setStyleSheet("")
+        self.label_show_camera.setText("")
+        self.label_show_camera.setObjectName("label_show_camera")
+        self.button_open_camera = QtWidgets.QPushButton(Form)
+        self.button_open_camera.setGeometry(QtCore.QRect(210, 620, 111, 41))
+        self.button_open_camera.setObjectName("button_open_camera")
+        self.widget = QtWidgets.QWidget(Form)
+        self.widget.setGeometry(QtCore.QRect(610, 10, 581, 671))
+        self.widget.setStyleSheet("")
+        self.widget.setObjectName("widget")
+        self.picture_label = QtWidgets.QLabel(self.widget)
+        self.picture_label.setGeometry(QtCore.QRect(88, 69, 160, 210))
+        self.picture_label.setMinimumSize(QtCore.QSize(160, 210))
+        self.picture_label.setMaximumSize(QtCore.QSize(160, 210))
+        self.picture_label.setStyleSheet("")
+        self.picture_label.setText("")
+        self.picture_label.setObjectName("picture_label")
+        self.widget1 = QtWidgets.QWidget(self.widget)
+        self.widget1.setGeometry(QtCore.QRect(140, 326, 421, 192))
+        self.widget1.setObjectName("widget1")
+        self.formLayout_2 = QtWidgets.QFormLayout(self.widget1)
+        self.formLayout_2.setContentsMargins(0, 0, 0, 0)
+        self.formLayout_2.setVerticalSpacing(50)
+        self.formLayout_2.setObjectName("formLayout_2")
+        self.label_4 = QtWidgets.QLabel(self.widget1)
+        self.label_4.setStyleSheet("font: 15pt \"楷体\";\n"
+"color: rgb(0, 255, 255);")
+        self.label_4.setObjectName("label_4")
+        self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label_4)
+        self.class_lineEdit = QtWidgets.QLineEdit(self.widget1)
+        self.class_lineEdit.setEnabled(False)
+        self.class_lineEdit.setStyleSheet("font: 14pt \"新宋体\";\n"
+"border:None;")
+        self.class_lineEdit.setObjectName("class_lineEdit")
+        self.formLayout_2.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.class_lineEdit)
+        self.label_5 = QtWidgets.QLabel(self.widget1)
+        self.label_5.setStyleSheet("font: 15pt \"楷体\";\n"
+"color: rgb(0, 255, 255);")
+        self.label_5.setObjectName("label_5")
+        self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_5)
+        self.number_lineEdit = QtWidgets.QLineEdit(self.widget1)
+        self.number_lineEdit.setEnabled(False)
+        self.number_lineEdit.setStyleSheet("font: 14pt \"新宋体\";\n"
+"border:None;")
+        self.number_lineEdit.setObjectName("number_lineEdit")
+        self.formLayout_2.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.number_lineEdit)
+        self.label_6 = QtWidgets.QLabel(self.widget1)
+        self.label_6.setStyleSheet("font: 15pt \"楷体\";\n"
+"color: rgb(0, 255, 255);")
+        self.label_6.setObjectName("label_6")
+        self.formLayout_2.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_6)
+        self.teacher_lineEdit = QtWidgets.QLineEdit(self.widget1)
+        self.teacher_lineEdit.setEnabled(False)
+        self.teacher_lineEdit.setStyleSheet("font: 14pt \"新宋体\";\n"
+"border:None;")
+        self.teacher_lineEdit.setObjectName("teacher_lineEdit")
+        self.formLayout_2.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.teacher_lineEdit)
+        self.widget2 = QtWidgets.QWidget(self.widget)
+        self.widget2.setGeometry(QtCore.QRect(300, 90, 258, 201))
+        self.widget2.setObjectName("widget2")
+        self.formLayout = QtWidgets.QFormLayout(self.widget2)
+        self.formLayout.setContentsMargins(0, 0, 0, 0)
+        self.formLayout.setHorizontalSpacing(7)
+        self.formLayout.setVerticalSpacing(50)
+        self.formLayout.setObjectName("formLayout")
+        self.label = QtWidgets.QLabel(self.widget2)
+        self.label.setStyleSheet("font: 15pt \"楷体\";\n"
+"color: rgb(0, 255, 255);")
+        self.label.setObjectName("label")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.LabelRole, self.label)
+        self.name_lineEdit = QtWidgets.QLineEdit(self.widget2)
+        self.name_lineEdit.setEnabled(False)
+        self.name_lineEdit.setStyleSheet("font: 14pt \"新宋体\";\n"
+"border:None;")
+        self.name_lineEdit.setObjectName("name_lineEdit")
+        self.formLayout.setWidget(0, QtWidgets.QFormLayout.FieldRole, self.name_lineEdit)
+        self.label_2 = QtWidgets.QLabel(self.widget2)
+        self.label_2.setStyleSheet("font: 15pt \"楷体\";\n"
+"color: rgb(0, 255, 255);")
+        self.label_2.setObjectName("label_2")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.LabelRole, self.label_2)
+        self.team_lineEdit = QtWidgets.QLineEdit(self.widget2)
+        self.team_lineEdit.setEnabled(False)
+        self.team_lineEdit.setStyleSheet("font: 14pt \"新宋体\";\n"
+"border:None;")
+        self.team_lineEdit.setObjectName("team_lineEdit")
+        self.formLayout.setWidget(1, QtWidgets.QFormLayout.FieldRole, self.team_lineEdit)
+        self.num_lineEdit = QtWidgets.QLineEdit(self.widget2)
+        self.num_lineEdit.setEnabled(False)
+        self.num_lineEdit.setStyleSheet("font: 14pt \"新宋体\";\n"
+"border:None;")
+        self.num_lineEdit.setObjectName("num_lineEdit")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.num_lineEdit)
+        self.label_3 = QtWidgets.QLabel(self.widget2)
+        self.label_3.setStyleSheet("font: 15pt \"楷体\";\n"
+"color: rgb(0, 255, 255);")
+        self.label_3.setObjectName("label_3")
+        self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.label_3)
+        self.widget3 = QtWidgets.QWidget(self.widget)
+        self.widget3.setGeometry(QtCore.QRect(262, 587, 274, 43))
+        self.widget3.setObjectName("widget3")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.widget3)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setSpacing(50)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.retry_btn = QtWidgets.QPushButton(self.widget3)
+        self.retry_btn.setMinimumSize(QtCore.QSize(111, 41))
+        self.retry_btn.setMaximumSize(QtCore.QSize(111, 41))
+        self.retry_btn.setObjectName("retry_btn")
+        self.horizontalLayout.addWidget(self.retry_btn)
+        self.confirm_btn = QtWidgets.QPushButton(self.widget3)
+        self.confirm_btn.setMinimumSize(QtCore.QSize(111, 41))
+        self.confirm_btn.setMaximumSize(QtCore.QSize(111, 41))
+        self.confirm_btn.setObjectName("confirm_btn")
+        self.horizontalLayout.addWidget(self.confirm_btn)
+
+        self.retranslateUi(Form)
+        self.button_open_camera.clicked.connect(Form.button_open_camera_clicked)
+        self.retry_btn.clicked.connect(Form.retry)
+        self.confirm_btn.clicked.connect(Form.confirm)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.button_open_camera.setText(_translate("Form", "打开摄像头"))
+        self.label_4.setText(_translate("Form", "班级："))
+        self.label_5.setText(_translate("Form", "电话："))
+        self.label_6.setText(_translate("Form", "辅导员："))
+        self.label.setText(_translate("Form", "姓名："))
+        self.label_2.setText(_translate("Form", "社团："))
+        self.label_3.setText(_translate("Form", "学号："))
+        self.retry_btn.setText(_translate("Form", "重试"))
+        self.confirm_btn.setText(_translate("Form", "确认"))
+import images_rc

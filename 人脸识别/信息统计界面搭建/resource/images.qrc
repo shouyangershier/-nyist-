@@ -1,0 +1,18 @@
+<RCC>
+  <qresource prefix="register">
+    <file>images/register_background.jpg</file>
+  </qresource>
+  <qresource prefix="manage">
+    <file>images/2.jpg</file>
+    <file>images/1.jpg</file>
+  </qresource>
+  <qresource prefix="recognition">
+    <file>images/recongnition_bg.jpg</file>
+    <file>images/recongnition_bg2.jpg</file>
+  </qresource>
+  <qresource prefix="login">
+    <file>images/login_top.gif</file>
+    <file>images/login_arrow.png</file>
+    <file>images/qq.jpg</file>
+  </qresource>
+</RCC>

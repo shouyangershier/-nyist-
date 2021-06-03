@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1200</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1200</width>
+    <height>700</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1201</width>
+     <height>701</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout" stretch="2,8">
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/manage/images/1.jpg);</string>
+      </property>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>238</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>信息上传</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>40</y>
+         <width>238</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>信息查看</string>
+       </property>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
+      <widget class="QPushButton" name="uploading_btn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>630</y>
+         <width>121</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+	background-color: rgb(33,174,250);
+	border-radius:8px;
+	color:white;
+}
+QPushButton:hover{
+	background-color:rgb(72,203,250);
+}
+QPushButton:pressed{
+	background-color:rgb(85,85,255);
+}
+QPushButton:disabled{
+	background-color: rgb(188, 188, 188);
+}</string>
+       </property>
+       <property name="text">
+        <string>上传</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_7">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>30</y>
+         <width>451</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 24pt &quot;方正粗黑宋简体&quot;;</string>
+       </property>
+       <property name="text">
+        <string>科技园社团成员信息登记</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="image_btn">
+       <property name="geometry">
+        <rect>
+         <x>510</x>
+         <y>180</y>
+         <width>131</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>上传照片</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="image_label">
+       <property name="geometry">
+        <rect>
+         <x>320</x>
+         <y>90</y>
+         <width>160</width>
+         <height>210</height>
+        </rect>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>160</width>
+         <height>210</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>        照片</string>
+       </property>
+      </widget>
+      <widget class="QWidget" name="layoutWidget">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>310</y>
+         <width>771</width>
+         <height>291</height>
+        </rect>
+       </property>
+       <layout class="QGridLayout" name="gridLayout">
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <property name="spacing">
+         <number>7</number>
+        </property>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;楷体&quot;;</string>
+          </property>
+          <property name="text">
+           <string>学号：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLineEdit" name="name_line">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;宋体&quot;;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="3">
+         <widget class="QComboBox" name="team_line">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;宋体&quot;;</string>
+          </property>
+          <property name="maxVisibleItems">
+           <number>10</number>
+          </property>
+          <item>
+           <property name="text">
+            <string>仁爱</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>菜鸟</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>优C</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>前沿</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>啄木鸟</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>千百度</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>ACM</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QLabel" name="label">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;楷体&quot;;</string>
+          </property>
+          <property name="text">
+           <string>姓名：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QLabel" name="label_4">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;楷体&quot;;</string>
+          </property>
+          <property name="text">
+           <string>班级：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="2">
+         <widget class="QLabel" name="label_6">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;楷体&quot;;</string>
+          </property>
+          <property name="text">
+           <string>辅导员</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QLineEdit" name="num_line">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;宋体&quot;;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="3">
+         <widget class="QLineEdit" name="class_line">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;宋体&quot;;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="3">
+         <widget class="QLineEdit" name="teacher_line">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;宋体&quot;;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="1">
+         <widget class="QLineEdit" name="number_line">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;宋体&quot;;</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="label_2">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;楷体&quot;;</string>
+          </property>
+          <property name="text">
+           <string>社团：</string>
+          </property>
+         </widget>
+        </item>
+        <item row="2" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="styleSheet">
+           <string notr="true">font: 16pt &quot;楷体&quot;;</string>
+          </property>
+          <property name="text">
+           <string>电话：</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+       <zorder>label_3</zorder>
+       <zorder>name_line</zorder>
+       <zorder>team_line</zorder>
+       <zorder>label_4</zorder>
+       <zorder>label_6</zorder>
+       <zorder>num_line</zorder>
+       <zorder>class_line</zorder>
+       <zorder>teacher_line</zorder>
+       <zorder>number_line</zorder>
+       <zorder>label_2</zorder>
+       <zorder>label_5</zorder>
+       <zorder>label</zorder>
+      </widget>
+      <widget class="QLabel" name="label_hint">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>590</y>
+         <width>72</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 0, 0);</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QListWidget" name="listWidget">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>954</width>
+         <height>699</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-image: url(:/manage/images/2.jpg);</string>
+       </property>
+      </widget>
+      <zorder>listWidget</zorder>
+      <zorder>uploading_btn</zorder>
+      <zorder>label_7</zorder>
+      <zorder>image_btn</zorder>
+      <zorder>image_label</zorder>
+      <zorder>layoutWidget</zorder>
+      <zorder>label_hint</zorder>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="../images.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>uploading_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>uploading()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>701</x>
+     <y>650</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>726</x>
+     <y>724</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>image_btn</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>openimage()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>863</x>
+     <y>202</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1237</x>
+     <y>217</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_2</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>collect_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>44</x>
+     <y>19</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-197</x>
+     <y>25</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>Form</receiver>
+   <slot>manage_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>46</x>
+     <y>67</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>-130</x>
+     <y>56</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>name_line</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_inf_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>459</x>
+     <y>366</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>458</x>
+     <y>780</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>num_line</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_inf_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>522</x>
+     <y>458</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>561</x>
+     <y>749</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>class_line</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_inf_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>888</x>
+     <y>458</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>903</x>
+     <y>805</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>number_line</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_inf_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>601</x>
+     <y>539</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>602</x>
+     <y>944</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>team_line</sender>
+   <signal>editTextChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_inf_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1021</x>
+     <y>368</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>1059</x>
+     <y>785</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>teacher_line</sender>
+   <signal>textChanged(QString)</signal>
+   <receiver>Form</receiver>
+   <slot>enable_inf_btn()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>958</x>
+     <y>540</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>972</x>
+     <y>832</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>uploading()</slot>
+  <slot>openimage()</slot>
+  <slot>enable_inf_btn()</slot>
+  <slot>account_btn()</slot>
+  <slot>collect_btn()</slot>
+  <slot>manage_btn()</slot>
+ </slots>
+</ui>

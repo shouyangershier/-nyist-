@@ -1,0 +1,207 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'D:\桌面\python\PyQt5\科技园登记系统\信息统计界面搭建\resource\UI\collect.ui'
+#
+# Created by: PyQt5 UI code generator 5.14.1
+#
+# WARNING! All changes made in this file will be lost!
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+
+class Ui_Form(object):
+    def setupUi(self, Form):
+        Form.setObjectName("Form")
+        Form.resize(1200, 700)
+        Form.setMinimumSize(QtCore.QSize(1200, 700))
+        Form.setMaximumSize(QtCore.QSize(1200, 700))
+        Form.setStyleSheet("")
+        self.layoutWidget = QtWidgets.QWidget(Form)
+        self.layoutWidget.setGeometry(QtCore.QRect(0, 0, 1201, 701))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.horizontalLayout = QtWidgets.QHBoxLayout(self.layoutWidget)
+        self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.widget = QtWidgets.QWidget(self.layoutWidget)
+        self.widget.setStyleSheet("background-image: url(:/manage/images/1.jpg);")
+        self.widget.setObjectName("widget")
+        self.pushButton_2 = QtWidgets.QPushButton(self.widget)
+        self.pushButton_2.setGeometry(QtCore.QRect(0, 0, 238, 41))
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_3 = QtWidgets.QPushButton(self.widget)
+        self.pushButton_3.setGeometry(QtCore.QRect(0, 40, 238, 41))
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.horizontalLayout.addWidget(self.widget)
+        self.widget_2 = QtWidgets.QWidget(self.layoutWidget)
+        self.widget_2.setStyleSheet("")
+        self.widget_2.setObjectName("widget_2")
+        self.uploading_btn = QtWidgets.QPushButton(self.widget_2)
+        self.uploading_btn.setEnabled(False)
+        self.uploading_btn.setGeometry(QtCore.QRect(400, 630, 121, 41))
+        self.uploading_btn.setStyleSheet("QPushButton{\n"
+"    background-color: rgb(33,174,250);\n"
+"    border-radius:8px;\n"
+"    color:white;\n"
+"}\n"
+"QPushButton:hover{\n"
+"    background-color:rgb(72,203,250);\n"
+"}\n"
+"QPushButton:pressed{\n"
+"    background-color:rgb(85,85,255);\n"
+"}\n"
+"QPushButton:disabled{\n"
+"    background-color: rgb(188, 188, 188);\n"
+"}")
+
+#--
+        self.listWidget = QtWidgets.QListWidget(self.widget_2)
+        self.listWidget.setGeometry(QtCore.QRect(0, 0, 954, 699))
+        self.listWidget.setStyleSheet("background-image: url(:/manage/images/2.jpg);")
+        self.listWidget.setObjectName("listWidget")
+        self.listWidget.raise_()
+#--
+
+
+
+        self.uploading_btn.setObjectName("uploading_btn")
+        self.label_7 = QtWidgets.QLabel(self.widget_2)
+        self.label_7.setGeometry(QtCore.QRect(280, 30, 451, 61))
+        self.label_7.setStyleSheet("font: 24pt \"方正粗黑宋简体\";")
+        self.label_7.setObjectName("label_7")
+        self.image_btn = QtWidgets.QPushButton(self.widget_2)
+        self.image_btn.setGeometry(QtCore.QRect(510, 180, 131, 51))
+        self.image_btn.setObjectName("image_btn")
+        self.image_label = QtWidgets.QLabel(self.widget_2)
+        self.image_label.setGeometry(QtCore.QRect(320, 90, 160, 210))
+        self.image_label.setMinimumSize(QtCore.QSize(160, 210))
+        self.image_label.setStyleSheet("background-color: rgb(255, 255, 255);")
+        self.image_label.setObjectName("image_label")
+        self.layoutWidget1 = QtWidgets.QWidget(self.widget_2)
+        self.layoutWidget1.setGeometry(QtCore.QRect(100, 310, 771, 291))
+        self.layoutWidget1.setObjectName("layoutWidget1")
+        self.gridLayout = QtWidgets.QGridLayout(self.layoutWidget1)
+        self.gridLayout.setContentsMargins(0, 0, 0, 0)
+        self.gridLayout.setSpacing(7)
+        self.gridLayout.setObjectName("gridLayout")
+        self.label_3 = QtWidgets.QLabel(self.layoutWidget1)
+        self.label_3.setStyleSheet("font: 16pt \"楷体\";")
+        self.label_3.setObjectName("label_3")
+        self.gridLayout.addWidget(self.label_3, 1, 0, 1, 1)
+        self.name_line = QtWidgets.QLineEdit(self.layoutWidget1)
+        self.name_line.setStyleSheet("font: 16pt \"宋体\";")
+        self.name_line.setObjectName("name_line")
+        self.gridLayout.addWidget(self.name_line, 0, 1, 1, 1)
+        self.team_line = QtWidgets.QComboBox(self.layoutWidget1)
+        self.team_line.setStyleSheet("font: 16pt \"宋体\";")
+        self.team_line.setMaxVisibleItems(10)
+        self.team_line.setObjectName("team_line")
+        self.team_line.addItem("")
+        self.team_line.addItem("")
+        self.team_line.addItem("")
+        self.team_line.addItem("")
+        self.team_line.addItem("")
+        self.team_line.addItem("")
+        self.team_line.addItem("")
+        self.gridLayout.addWidget(self.team_line, 0, 3, 1, 1)
+        self.label = QtWidgets.QLabel(self.layoutWidget1)
+        self.label.setStyleSheet("font: 16pt \"楷体\";")
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
+        self.label_4 = QtWidgets.QLabel(self.layoutWidget1)
+        self.label_4.setStyleSheet("font: 16pt \"楷体\";")
+        self.label_4.setObjectName("label_4")
+        self.gridLayout.addWidget(self.label_4, 1, 2, 1, 1)
+        self.label_6 = QtWidgets.QLabel(self.layoutWidget1)
+        self.label_6.setStyleSheet("font: 16pt \"楷体\";")
+        self.label_6.setObjectName("label_6")
+        self.gridLayout.addWidget(self.label_6, 2, 2, 1, 1)
+        self.num_line = QtWidgets.QLineEdit(self.layoutWidget1)
+        self.num_line.setStyleSheet("font: 16pt \"宋体\";")
+        self.num_line.setObjectName("num_line")
+        self.gridLayout.addWidget(self.num_line, 1, 1, 1, 1)
+        self.class_line = QtWidgets.QLineEdit(self.layoutWidget1)
+        self.class_line.setStyleSheet("font: 16pt \"宋体\";")
+        self.class_line.setObjectName("class_line")
+        self.gridLayout.addWidget(self.class_line, 1, 3, 1, 1)
+        self.teacher_line = QtWidgets.QLineEdit(self.layoutWidget1)
+        self.teacher_line.setStyleSheet("font: 16pt \"宋体\";")
+        self.teacher_line.setObjectName("teacher_line")
+        self.gridLayout.addWidget(self.teacher_line, 2, 3, 1, 1)
+        self.number_line = QtWidgets.QLineEdit(self.layoutWidget1)
+        self.number_line.setStyleSheet("font: 16pt \"宋体\";")
+        self.number_line.setObjectName("number_line")
+        self.gridLayout.addWidget(self.number_line, 2, 1, 1, 1)
+        self.label_2 = QtWidgets.QLabel(self.layoutWidget1)
+        self.label_2.setStyleSheet("font: 16pt \"楷体\";")
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 0, 2, 1, 1)
+        self.label_5 = QtWidgets.QLabel(self.layoutWidget1)
+        self.label_5.setStyleSheet("font: 16pt \"楷体\";")
+        self.label_5.setObjectName("label_5")
+        self.gridLayout.addWidget(self.label_5, 2, 0, 1, 1)
+        self.label_3.raise_()
+        self.name_line.raise_()
+        self.team_line.raise_()
+        self.label_4.raise_()
+        self.label_6.raise_()
+        self.num_line.raise_()
+        self.class_line.raise_()
+        self.teacher_line.raise_()
+        self.number_line.raise_()
+        self.label_2.raise_()
+        self.label_5.raise_()
+        self.label.raise_()
+        self.label_hint = QtWidgets.QLabel(self.widget_2)
+        self.label_hint.setGeometry(QtCore.QRect(430, 590, 72, 15))
+        self.label_hint.setStyleSheet("color: rgb(255, 0, 0);")
+        self.label_hint.setText("")
+        self.label_hint.setObjectName("label_hint")
+# --------
+# --------
+        self.uploading_btn.raise_()
+        self.label_7.raise_()
+        self.image_btn.raise_()
+        self.image_label.raise_()
+        self.layoutWidget.raise_()
+        self.label_hint.raise_()
+        self.horizontalLayout.addWidget(self.widget_2)
+        self.horizontalLayout.setStretch(0, 2)
+        self.horizontalLayout.setStretch(1, 8)
+
+        self.retranslateUi(Form)
+        self.uploading_btn.clicked.connect(Form.uploading)
+        self.image_btn.clicked.connect(Form.openimage)
+        self.pushButton_2.clicked.connect(Form.collect_btn)
+        self.pushButton_3.clicked.connect(Form.manage_btn)
+        self.name_line.textChanged['QString'].connect(Form.enable_inf_btn)
+        self.num_line.textChanged['QString'].connect(Form.enable_inf_btn)
+        self.class_line.textChanged['QString'].connect(Form.enable_inf_btn)
+        self.number_line.textChanged['QString'].connect(Form.enable_inf_btn)
+        self.team_line.editTextChanged['QString'].connect(Form.enable_inf_btn)
+        self.teacher_line.textChanged['QString'].connect(Form.enable_inf_btn)
+        QtCore.QMetaObject.connectSlotsByName(Form)
+
+    def retranslateUi(self, Form):
+        _translate = QtCore.QCoreApplication.translate
+        Form.setWindowTitle(_translate("Form", "Form"))
+        self.pushButton_2.setText(_translate("Form", "信息上传"))
+        self.pushButton_3.setText(_translate("Form", "信息查看"))
+        self.uploading_btn.setText(_translate("Form", "上传"))
+        self.label_7.setText(_translate("Form", "科技园社团成员信息登记"))
+        self.image_btn.setText(_translate("Form", "上传照片"))
+        self.image_label.setText(_translate("Form", "        照片"))
+        self.label_3.setText(_translate("Form", "学号："))
+        self.team_line.setItemText(0, _translate("Form", "仁爱"))
+        self.team_line.setItemText(1, _translate("Form", "菜鸟"))
+        self.team_line.setItemText(2, _translate("Form", "优C"))
+        self.team_line.setItemText(3, _translate("Form", "前沿"))
+        self.team_line.setItemText(4, _translate("Form", "啄木鸟"))
+        self.team_line.setItemText(5, _translate("Form", "千百度"))
+        self.team_line.setItemText(6, _translate("Form", "ACM"))
+        self.label.setText(_translate("Form", "姓名："))
+        self.label_4.setText(_translate("Form", "班级："))
+        self.label_6.setText(_translate("Form", "辅导员"))
+        self.label_2.setText(_translate("Form", "社团："))
+        self.label_5.setText(_translate("Form", "电话："))
+import images_rc
